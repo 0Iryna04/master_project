@@ -45,7 +45,6 @@ if __name__ == "__main__":
     data, scaler = load_data('ml/historical_data.csv')  # Історичні дані
     X, y = prepare_data(data)
 
-    # Check the shapes of X and y before reshaping
     print(X.shape, y.shape)
 
     X = X.reshape(X.shape[0], X.shape[1], 1)
